@@ -31,6 +31,7 @@ class FirstPage extends StatelessWidget {
                 onPressed: () {
                   myProvider.mitexto =
                       "Provider nos brinda una forma fácil y sencilla de separar la lógica empresarial de nuestros widgets en las aplicaciones.";
+                  //Aquí accedemos al método setter “mitexto” y pasar el String que solicita. Al realizar esto actualizamos el valor en el provider y hacemos que los widgets que están escuchando sean actualizados.
                 },
                 color: Colors.black,
                 child: Text(

@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => MyProvider(),
+      create: (context) => MyProvider(), //Requerimos de un create, que recibe el context, y devuelve un MyProvider().
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Ejemplo Provider',

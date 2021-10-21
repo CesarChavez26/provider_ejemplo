@@ -7,6 +7,7 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var myProvider = Provider.of<MyProvider>(context);
+    //Creamos una instancia de myProvider con el cual lograremos interactuar de dentro de los widgets.
     return Scaffold(
       appBar: AppBar(
         title: Text('Segunda Página'),
@@ -25,6 +26,7 @@ class SecondPage extends StatelessWidget {
                         width: 300,
                         height: 100,
                         child: Text(myProvider.mitexto),
+                        //Por medio myProvider accedemos al método getter “mitexto” el cual nos devuelve un String que ese dice " Hola, este es un ejemplo utilizando Provider. Tendremos un Provider, que nos permitirá compartir la información entre 2 pantallas diferentes. Esto es una pequeña prueba de Provider para gestionar estados de la app.".
                       ))),
               MaterialButton(
                 color: Colors.black,
